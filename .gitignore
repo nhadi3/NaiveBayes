@@ -6,6 +6,13 @@
 # Prerequisites
 *.d
 
+# Resource files
+readme.txt
+testimages
+testlabels
+trainingimages
+traininglabels
+
 # Compiled Object files
 *.slo
 *.lo
