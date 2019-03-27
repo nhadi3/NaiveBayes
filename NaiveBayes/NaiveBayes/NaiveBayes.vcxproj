@@ -127,7 +127,7 @@
     <ClInclude Include="main.h" />
     <ClInclude Include="model.h" />
     <ClInclude Include="number.h" />
-    <ClInclude Include="traindata.h" />
+    <ClInclude Include="trainmodel.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
@@ -147,7 +147,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="number.cpp" />
-    <ClCompile Include="traindata.cpp" />
+    <ClCompile Include="trainmodel.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

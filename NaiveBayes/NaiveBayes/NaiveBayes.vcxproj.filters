@@ -27,7 +27,7 @@
     <ClInclude Include="main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="traindata.h">
+    <ClInclude Include="trainmodel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -63,7 +63,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="traindata.cpp">
+    <ClCompile Include="trainmodel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
