@@ -5,9 +5,6 @@
 #include <string>
 #include <vector>
 
-const int kImageDimension = 28;
-const int kNumOfDigits = 10;
-
 using std::string;
 
 class Number {
