@@ -4,7 +4,24 @@
 #include <fstream>
 #include <vector>
 
-std::vector<std::vector<std::vector<int>>> FileTo2DArray(string file) {
+std::vector<double> CalculateProbabilityForEachClass(string file) {
+	std::vector<double> probabilities(kNumOfDigits);
+	std::vector<char> labels(kNumberOfTrainingLabels);
+	labels = TrainingLabelsTo2DArray(file);
+	double tempdigitcount = 0;
+	for (int i = 0; i < kNumOfDigits; i++) {
+		for (int j = 0; j < kNumberOfTrainingLabels; j++) {
+			if ( labels[j] == (char) (i + '0')) {
+				tempdigitcount++;
+			}
+		}
+		probabilities[i] = (tempdigitcount / kNumberOfTrainingLabels);
+		tempdigitcount = 0;
+	}
+	return probabilities;
+}
+
+std::vector<std::vector<std::vector<int>>> TrainingImagesTo2DArray(string file) {
 	std::vector<std::vector<std::vector<int>>>number_vector(kNumberOfTrainingLabels, std::vector<std::vector<int>>(kImageDimension, std::vector<int>(kImageDimension)));
 	std::ifstream inFile;
 
@@ -27,7 +44,7 @@ std::vector<std::vector<std::vector<int>>> FileTo2DArray(string file) {
 	return number_vector;
 }
 
-std::vector<char> LabelsTo2DArray(string file) {
+std::vector<char> TrainingLabelsTo2DArray(string file) {
 	std::vector<char> number_vector(kNumberOfTrainingLabels);
 	std::ifstream inFile;
 

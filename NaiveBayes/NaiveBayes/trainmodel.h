@@ -7,8 +7,9 @@
 
 const int kNumberOfTrainingLabels = 5000;
 
-std::vector<std::vector<std::vector<int>>> FileTo2DArray(string file);
-std::vector<char> LabelsTo2DArray(string file);
+std::vector<std::vector<std::vector<int>>> TrainingImagesTo2DArray(string file);
+std::vector<char> TrainingLabelsTo2DArray(string file);
+std::vector<double> CalculateProbabilityForEachClass(string file);
 
 
 #endif TRAINDATA_H
