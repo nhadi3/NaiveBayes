@@ -124,9 +124,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="catch.hpp" />
+    <ClInclude Include="classify.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="model.h" />
-    <ClInclude Include="number.h" />
     <ClInclude Include="trainmodel.h" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +139,7 @@
     <None Include="traininglabels" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="classify.cpp" />
     <ClCompile Include="main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -146,7 +147,6 @@
     <ClCompile Include="naivebayes_testing.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="number.cpp" />
     <ClCompile Include="trainmodel.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -3,6 +3,7 @@
 
 #include "model.h"
 #include "trainmodel.h"
+#include "classify.h"
 
 #pragma once
 
