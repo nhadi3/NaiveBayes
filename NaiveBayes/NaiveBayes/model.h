@@ -10,12 +10,13 @@
 using std::string;
 
 class Model {
-	std::vector<char> classprobability[10];
-	double pixelprobability[28][28][10];
-	int label_;
+	std::vector<double> classprobability_;
+	std::vector<std::vector<std::vector<double>>> pixelprobability_;
 public:
-	void SetClassProb(double array[]);
-
+	void SetClassProb(std::vector<double> prob);
+	std::vector<double> GetClassProb();
+	void SetPixelProb(std::vector<std::vector<std::vector<double>>> prob);
+	std::vector<std::vector<std::vector<double>>> GetPixelProb();
 };
 
 #endif MODEL_H
