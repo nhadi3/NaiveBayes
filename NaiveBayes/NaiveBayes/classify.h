@@ -8,7 +8,7 @@
 
 const int kNumOfTestImages = 1000;
 
-std::vector<int> ClassifyImages(string file, string newfile);
+std::vector<int> ClassifyImages();
 std::vector<std::vector<double>> ProbabilitiesForImages();
 std::vector<std::vector<std::vector<int>>> ImagesToClassifyTo2DArray(string file);
 

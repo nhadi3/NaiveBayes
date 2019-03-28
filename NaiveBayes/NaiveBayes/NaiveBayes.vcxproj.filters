@@ -30,6 +30,9 @@
     <ClInclude Include="classify.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="evaluate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt">
@@ -64,6 +67,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="classify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="evaluate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

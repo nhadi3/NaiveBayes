@@ -38,7 +38,7 @@ std::vector<std::vector<double>> ProbabilitiesForImages() {
 	return probabilities;
 }
 
-std::vector<int> ClassifyImages(string file, string newfile) {
+std::vector<int> ClassifyImages() {
 	std::vector<int> classifications(kNumOfTestImages);
 	std::vector<std::vector<double>> image_probabilities(kNumOfTestImages, std::vector<double>(kNumOfDigits));
 

@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClInclude Include="catch.hpp" />
     <ClInclude Include="classify.h" />
+    <ClInclude Include="evaluate.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="model.h" />
     <ClInclude Include="trainmodel.h" />
@@ -140,6 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="classify.cpp" />
+    <ClCompile Include="evaluate.cpp" />
     <ClCompile Include="main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

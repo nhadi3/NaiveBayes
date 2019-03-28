@@ -4,6 +4,7 @@
 #include "model.h"
 #include "trainmodel.h"
 #include "classify.h"
+#include "evaluate.h"
 
 #pragma once
 
