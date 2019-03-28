@@ -4,6 +4,17 @@
 #include <string>
 
 int main() {
+	string file_to_train;
+	string file_to_write_model;
+
+	std::cout << "Enter file to train from: " << std::endl;
+	std::cin >> file_to_train;
+	std::cout << "Enter file to write model to: " << std::endl;
+	std::cin >> file_to_write_model;
+
+	Model model;
+	model.InitializeModelAndWriteToFile(file_to_train, file_to_write_model);
+	
 	std::vector<std::vector<double>> confusionmatrix;
 	confusionmatrix = CreateConfusionMatrix("testlabels");
 	for (int i = 0; i < kNumOfDigits; i++) {
@@ -11,11 +22,6 @@ int main() {
 			std::cout << " " << confusionmatrix[i][j];
 		}
 		std::cout << std::endl;
-	}
-	std::vector<double> count;
-	count = CountNumOfDigitAppearances("traininglabels");
-	for (int i = 0; i < kNumOfDigits; i++) {
-		std::cout << " " << count[i];
 	}
 	std::cout << EvaluatePercentageOfCorrectClassifications("testlabels") << "%";
 	return 0;
